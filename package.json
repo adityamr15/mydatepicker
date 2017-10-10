@@ -1,10 +1,10 @@
 {
   "name": "mydatepicker",
-  "version": "1.7.5",
-  "description": "Angular2 date picker",
+  "version": "2.0.31",
+  "description": "Angular date picker",
   "keywords": [
     "Angular2",
-    "datepicker",
+    "Angular4",
     "date picker"
   ],
   "author": "kekeh",
@@ -20,7 +20,7 @@
     "test": "karma start config/karma.conf.js",
     "tslint": "gulp tslint",
     "ngc": "ngc -p tsconfig.publish.json",
-    "bundle": "rollup -c rollup.config.js && uglifyjs npmdist/bundles/mydatepicker.umd.js -c --screw-ie8 -o npmdist/bundles/mydatepicker.umd.min.js"
+    "bundle": "rollup -c rollup.config.js && uglifyjs npmdist/bundles/mydatepicker.umd.js --compress --mangle --screw-ie8 -o npmdist/bundles/mydatepicker.umd.min.js"
   },
   "main": "bundles/mydatepicker.umd.js",
   "typings": "index.d.ts",
@@ -53,7 +53,7 @@
     "gulp-clean": "0.3.2",
     "gulp-clean-css": "2.0.12",
     "gulp-htmlmin": "3.0.0",
-    "gulp-json-editor": "^2.2.1",
+    "gulp-json-editor": "2.2.1",
     "gulp-replace": "0.5.4",
     "gulp-shell": "0.5.2",
     "gulp-tslint": "7.0.1",
@@ -85,7 +85,7 @@
     "to-string-loader": "1.1.4",
     "tslint": "4.0.2",
     "typescript": "2.0.3",
-    "uglifyjs": "2.4.10",
+    "uglify-js": "3.0.13",
     "webpack": "1.13.3",
     "webpack-dev-server": "1.16.2",
     "webpack-livereload-plugin": "0.10.0",
